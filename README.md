@@ -1,6 +1,6 @@
 # Personal-Website
 Frontend source code for my [personal website at http://pham11l.myweb.cs.uwindsor.ca](http://pham11l.myweb.cs.uwindsor.ca).
-I used Bootstrap, jQuery, and the Animate.css external libraries to help create the website.
+I used Bootstrap, jQuery, and the Animate.css external libraries to help create this mobile friendly responsive website.
 
 ## Folders
 * css (Contains the CSS files)

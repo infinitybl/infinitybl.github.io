@@ -10,6 +10,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    white-space: wrap;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -48,6 +49,7 @@ h3 {
 h4 {
     color: #545677;
     margin: 0.1em auto;
+    font-size: 1.4rem;
 }
 header {
     background-image: url(../images/dark.jpg);
@@ -59,7 +61,7 @@ header {
 article {
     background-color: #56a3a6;
     margin: 0 auto;
-    padding: 2.25em;
+    padding: 2.25em 1em;
     padding-top: 4em;
 }
 footer {
@@ -67,6 +69,9 @@ footer {
     text-align: center;
     color: white;
     padding: 1em;
+}
+ul {
+    list-style: square;
 }
 
 
@@ -104,7 +109,7 @@ ul strong {
 
 /* Main Page Sections */
 /* ------------------------------------- */
-/* Alternating oolouring style for the page sections */
+/* Alternating colouring style for the page sections and cards */
 article:nth-child(odd) {
     background-color: #d4eac8;
 }
@@ -117,11 +122,15 @@ article:nth-child(odd) h2 {
 article:nth-child(even) h2 {
     color: white;
 }
+.card {
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
 /* Add a border after every information element except for the last element in each of the main articles. */ 
-.skill:nth-last-child(n + 2), .institution:nth-last-child(n + 2), .job:nth-last-child(n + 2),
+/* .skill:nth-last-child(n + 2), .institution:nth-last-child(n + 2), .job:nth-last-child(n + 2),
 .volunteer-position:nth-last-child(n + 2) {
     border-bottom: 1px solid black;
-}
+} */
 
 
 /* Navigation */
@@ -209,7 +218,7 @@ nav a.active {
 /* Smallest phone screen  */
 @media (min-width: 340px) { 
     article {
-        padding: 4em;
+        padding: 4em 1em;
     }
     nav a {
         padding: 0.25em;
@@ -217,11 +226,12 @@ nav a.active {
     .profile-img {
         margin-top: 5em;
     }
+
 }
 
 @media (min-width: 574px) {
     article {
-        padding: 3.5em;
+        padding: 3.5em 1em;
     }
     footer {
         padding: 1em;
@@ -279,7 +289,7 @@ nav a.active {
     .links a:hover .display-text {
         font-size: 1.5rem;
         display: inline;
-    }
+    } 
 }
 
 /* Medium devices (desktops, 992px and up) */

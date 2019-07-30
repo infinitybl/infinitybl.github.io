@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet"> 
         
         <!-- Animation CSS -->
-        <link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" type="text/css" media="all">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -61,7 +61,9 @@
                 
                 <!-- Profile -->
                 <div class="profile">
-                    <img class="profile-img img-responsive img-fluid" src="images/phillip.PNG" alt="Profile Image" role="img">
+                    <div class="view overlay zoom">
+                        <img class="profile-img img-responsive img-fluid" src="images/phillip.PNG" alt="Profile Image" role="img">
+                    </div>
                     <h1 class="text-center">Phillip Pham</h1>
                     <h2 class="text-center">Computer Science Student</h2>
                     <p>Hello! My name is Phillip and I am currently a second year 
@@ -265,19 +267,19 @@
                     <h2>Events and Competitions</h2>
 
                     <!-- List of Events and Competitions -->
-                    <div class="event-list">    
+                    <div class="list-group list-group-flush event-list">    
                         <ul role="list">
-                            <li>
+                            <li class="list-group-item">
                                 <a href="https://windsorstar.com/news/local-news/hackathon-brings-together-brightest-teen-technology-minds" target="_blank" title="MasseyHacks Article"><strong>MasseyHacks I</strong> | March 2016 | Vincent Massey Secondary School, Windsor, ON</a>
                             </li>
-                            <li><strong>MasseyHacks II</strong> | May 2016 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li><strong>Canadian Computing Competition Contest</strong> | February 2016 and 2017 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li><strong>AMC 12B Math Contest</strong> | February 2018 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li><strong>Euclid Math Contest</strong> | April 2017 and 2018 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li>
-                                <a href="http://www.uwindsor.ca/dailynews/2018-09-28/students-showcase-computing-skills-preliminary-competition" target="_blank" title="Communitech Article"><strong>Communitech Code/Design to Win Preliminaries</strong> | September 2018 | University of Windsor, Windsor, ON</a>
+                            <li class="list-group-item"><strong>MasseyHacks II</strong> | May 2016 | Vincent Massey Secondary School, Windsor, ON</li>
+                            <li class="list-group-item"><strong>Canadian Computing Competition Contest</strong> | February 2016 and 2017 | Vincent Massey Secondary School, Windsor, ON</li>
+                            <li class="list-group-item"><strong>AMC 12B Math Contest</strong> | February 2018 | Vincent Massey Secondary School, Windsor, ON</li>
+                            <li class="list-group-item"><strong>Euclid Math Contest</strong> | April 2017 and 2018 | Vincent Massey Secondary School, Windsor, ON</li>
+                            <li class="list-group-item">
+                                <a href="http://www.uwindsor.ca/dailynews/2018-09-28/students-showcase-computing-skills-preliminary-competition" target="_blank" title="Commiuntech Article"><strong>Communitech Code/Design to Win Preliminaries</strong> | September 2018 | University of Windsor, Windsor, ON</a>
                             </li>
-                            <li>
+                            <li class="list-group-item">
                                 <a href="pdf/Bystander.pdf" target="_blank" title="Certificate"><strong>Bystander Initiative Program</strong> | November 2018 | University of Windsor, Windsor, ON</a>
                             </li> 
                         </ul>

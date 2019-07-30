@@ -74,7 +74,6 @@ ul {
     list-style: square;
 }
 
-
 /* Inline Styles */
 /* ------------------------------------- */
 em {
@@ -147,6 +146,7 @@ nav a:focus, nav a:hover {
 }
 nav a.active {
     background-color: #484538;
+    animation: rubberBand 1s; /* Animate active nav link */
 }
 
 .subheading {
@@ -210,6 +210,18 @@ nav a.active {
     color: rgb(27, 80, 179);
 }
 
+/* Event List */
+/* ------------------------------------- */
+.event-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Animations */
+/* ------------------------------------- */
+.rubberBand {
+    animation-duration: 1.5s;
+}
 
 /* Media Queries (Start from mobile up to desktop) */
 /* ------------------------------------- */

@@ -1,5 +1,5 @@
 # Personal-Website
-Frontend source code for my personal website at [https://infinitybl.github.io](https://infinitybl.github.io) or [http://pham11l.myweb.cs.uwindsor.ca](http://pham11l.myweb.cs.uwindsor.ca).
+Frontend source code for my personal website at [https://infinitybl.github.io](https://infinitybl.github.io) or [http://phillippham.tech](http://phillippham.tech).
 I used Bootstrap, jQuery, and the Animate.css external libraries to help create this mobile friendly responsive website.
 
 ## Folders

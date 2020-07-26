@@ -227,10 +227,11 @@ nav a.active {
   animation-duration: 1.5s;
 }
 
-/* Bottom border after each list element */
+/* Bottom padding after each list element */
 /* ------------------------------------- */
-li:not(:last-child, .list-group-item) {
-  border-bottom: 1px solid black;
+li:not(:last-child):not(.list-group-item) {
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 3px;
 }
 
 /* Bottom links hover */

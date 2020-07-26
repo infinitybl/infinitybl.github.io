@@ -1,315 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Phillip Pham</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phillip Pham</title>
 
-        <!-- Font Awesome Icons -->
-        <script src="https://kit.fontawesome.com/72dd008e6a.js" type="text/javascript"></script>
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/0a5b900664.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <!-- Loads Font Awesome via JavaScript -->
-        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet"> 
-        
-        <!-- Animation CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" type="text/css" media="all">
+    <!-- Loads Font Awesome via JavaScript -->
+    <script type="text/javascript">
+      (function () {
+        var css = document.createElement("link");
+        css.href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
+    </script>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Website CSS -->
-        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
-    </head> 
+    <!-- Animation CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      type="text/css"
+      media="all"
+    />
 
-    <!-- Scrollspy -->
-    <body data-spy="scroll" data-target="#main-navbar" data-off data-offset="80">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-        <!-- NAVIGATION -->
-        <nav id="main-navbar" class="navbar navbar-light navbar-expand-lg fixed-top" role="navigation">
-            <div class="container-fluid">
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
-                <!-- Toggle Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-nav" aria-controls="toggle-nav" aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-               
-                <!-- Collapsable Navbar -->
-                <div class="collapse navbar-collapse" id="toggle-nav">
-                    <div class="navbar-nav">
-                        <a class="btn nav-item nav-link active" href="#about" title="About">About</a>
-                        <a class="btn nav-item nav-link" href="#skills-projects" title="Skills and Projects">Skills and Projects</a>
-                        <a class="btn nav-item nav-link" href="#education" title="Education">Education</a>
-                        <a class="btn nav-item nav-link" href="#work" title="Work Experience">Work Experience</a>
-                        <a class="btn nav-item nav-link" href="#volunteer" title="Volunteer Experience">Volunteer Experience</a>
-                        <a class="btn nav-item nav-link" href="#events" title="Events and Competitions">Events and Competitions</a>
-                    </div>
-                </div>
-                
-            </div>
-        </nav>
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+  </head>
 
-        <!-- MAIN CONTAINER -->
-        <div class="container-fluid">
-            <!-- HEADER (ABOUT)-->
-            <header id="about" role="banner">
-                
-                <!-- Profile -->
-                <div class="profile">
-                    <div class="view overlay zoom">
-                        <img class="profile-img img-responsive img-fluid" src="images/phillip.PNG" alt="Profile Image" role="img">
-                    </div>
-                    <h1 class="text-center">Phillip Pham</h1>
-                    <h2 class="text-center">Computer Science Student</h2>
-                    <p>Hello! My name is Phillip and I am currently a second year 
-                    computer science student studying at the University of Windsor. 
-                    Some of my favourite hobbies including cycling, fishing, and learning about anything related to computers. I am expected to graduate sometime in 2023. Please feel free to
-                    look around on my website!</p>
-                    <a class="btn btn-info btn-block btn-resume" href="pdf/Resume.pdf" target="_blank">Resume</a>
-                </div>
+  <!-- Scrollspy -->
+  <body data-spy="scroll" data-target="#main-navbar" data-off data-offset="80">
+    <!-- NAVIGATION -->
+    <nav
+      id="main-navbar"
+      class="navbar navbar-light navbar-expand-lg fixed-top"
+      role="navigation"
+    >
+      <div class="container-fluid">
+        <!-- Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#toggle-nav"
+          aria-controls="toggle-nav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!-- External Link Buttons-->
-                <div class="links">
-                    <a href="mailto:masterphillip17@gmail.com" target="_blank" title="Email">
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <span class="display-text">Email</span>
-                    </a>
-                    <a href="https://github.com/infinitybl" target="_blank" title="GitHub">
-                        <span class="icon"><i class="fab fa-github"></i></span>
-                        <span class="display-text">GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/phillip-pham-6b48b7189/" target="_blank" title="Linkedin">
-                        <span class="icon"><i class="fab fa-linkedin"></i></span>
-                        <span class="display-text">Linkedin</span>
-                    </a>
-                    <a href="https://www.facebook.com/phillip.pham.5245" target="_blank" title="Facebook">
-                        <span class="icon"><i class="fab fa-facebook"></i></span>
-                        <span class="display-text">Facebook</span>
-                    </a>
-                </div>
-            </header>
-            
-            <!-- MAIN PORTION -->
-            <main role="main">
-                <!-- SKILLS AND PROJECTS-->
-                <article id="skills-projects" role="article"> 
-                    <h2>Skills and Projects</h2>
-
-                    <!-- Skill and Project Details -->
-                    <div class="card border skill">
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Front-End Web Development</h3>
-                            <h4>Strong knowledge of <em>HTML 5, CSS 3, JavaScript</em>.</h4>
-                        </div>
-                        <ul class="card-text" role="list">
-                            <li>Knowledgable with <strong>Bootstrap, SASS, Flexbox, Grid</strong>.</li>
-                            <li>Familiar with <strong>jQuery and React.js</strong> libraries.</li>
-                            <li>Side projects include <strong>developing this personal site</strong>.</li> 
-                            <li>Developed <strong>Recycle Cam</strong> in a group of four people, a web application made using React.js
-                            that takes pictures of recyclable objects and categorizes how to dispose them using <strong>Microsoft Azure</strong> object recognition.</li>
-                        </ul>
-                    </div>
-                    <div class="card border skill">
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Object-Oriented Development</h3>
-                            <h4>Strong knowledge with <em>Java</em> and familiar with <em>C#</em> programming languages.</h4>
-                        </div>
-                        <ul class="card-text" role="list">
-                            <li>Familiar with <strong>Swing GUI and Windows 10 Application Development.</strong></li>
-                            <li>Side projects include <strong>recreating Arkanoid and Bloons Tower Defense games.</strong></li>
-                        </ul>
-                    </div>
-                    <div class="card border skill">
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Other Scripting Languages</h3>
-                            <h4>Strong knowledge with <em>C, Python, and ActionScript</em> programming languages.</h4>
-                        </div>
-                        <ul class="card-text" role="list">
-                            <li>Experienced in the <strong>Pygame</strong> Python library.</li>
-                            <li>Side projects include creating a <strong>Snake game, Overwatch paint program, and recreating the Plants vs Zombies game.</strong></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- EDUCATION -->
-                <article id="education" role="article">
-                    <h2>Education</h2>
-                    <div class="card border institution">    
-                        <!-- University Details -->
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">B.C.S. in Computer Science (Honours) Co-Op</h3>
-                            <h3 class="card-subtitle date">September 2018 - Present</h3>
-                            <h4>University of Windsor, Windsor, ON</h4>
-                        </div>
-                        <ul class="card-text" role="list">
-                            <li><strong>97.53%</strong> cumulative GPA average.</li>
-                            <li><strong>97.89%</strong> major GPA average.</li>
-                            <li>Currently a second-year student starting Fall 2019.</li>
-                            <!--<li>President and Dean Honour Roll.</li>-->
-                            <li>Recipient of the UWindsor's <strong>Ron W. Ianni</strong>, Canadian Italian Business & Professional Association,
-                                Eleanor Catherine Wallace Memorial, and <strong>Outstanding Scholars Candidate</strong> entrance scholarships.</li>
-                            <li>Recipient of the Guaranteed Removals scholarship.</li>
-                        </ul>
-                    </div>
-                    <div class="card border institution">
-                        <!-- High School Details -->
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Ontario Secondary School Diploma</h3>
-                            <h3 class="card-subtitle date">September 2014 - June 2018</h3>
-                            <h4>Vincent Massey Secondary School, Windsor, ON</h4>
-                        </div>
-                        <ul class="card-text" role="list">  
-                            <li><strong>95%</strong> cumulative GPA average.</li>
-                            <li>Grade 9, 10, 11, 12 <strong>Honor Roll with Distinction</strong> (minimum 90% GPA average each year).</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- WORK EXPERIENCE -->
-                <article id="work" role="article">
-                    <h2>Work Experience</h2>
-                    
-                    <!-- Job Details -->
-                    <div class="card border job">    
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Computer Technician</h3>
-                            <h3 class="card-subtitle date">July 2019 - Present</h3>
-                            <h4>Silicon Direct, Windsor, ON</h4>
-                        </div>
-                        <ul class="card-text" role="list">                        
-                            <li><strong>Repaired and built</strong> computers and laptops by replacing various components such as screens, processors, memory, hard drives, and power supplies.</li>
-                            <li><strong>Cleaned and speeded up</strong> customers' computers by removing viruses, updating drivers, and removing unnecessary programs.</li>
-                            <li>Assisted in <strong>recovering data</strong> off damaged hard drives and flash drives using the PC-3000 software and equipment to extract the information.</li>
-                            <li><strong>Documented</strong> invoices and customer sales in the computer system and <strong>updated</strong> the business website with new items.</li>
-                            <li>Answered <strong>phone calls</strong> and helped in-store customers whenever they needed assistance.</li>
-                            <li>Effectively advertised on <strong>Google Adwords</strong> and created promotional materials using programs such as <strong>Adobe Photoshop.</strong></li>
-                        </ul>
-                    </div>
-                    
-                    
-                    <div class="card border job">    
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Teaching Assistant</h3>
-                            <h3 class="card-subtitle date">September 2019 - Present</h3>
-                            <h4>University of Windsor, Windsor, ON</h4>
-                        </div>
-                        <ul class="card-text" role="list">                        
-                            <li>Assisted in managing the <strong>Key Concepts in Computer Science and Intro to Algorithms and Programming II</strong> first-year classes.</li>
-                            <li><strong>Helped and tutored</strong> students by reviewing through difficult concepts and <strong>answered questions</strong> during lab sessions.</li>
-                            <li><strong>Graded</strong> assignments and midterms <strong>in short periods of time</strong>.</li>
-                            <li><strong>Proctored</strong> examinations and aided the professor in organizing them.</li>
-                        </ul>
-                    </div>
-                    
-                </article>
-                
-                <!-- VOLUNTEER EXPERIENCE -->
-                <article id="volunteer" role="article">
-                    <h2>Volunteer Experience</h2>
-                    
-                    <!-- Volunteer Position Details-->
-                    <div class="card border volunteer-position">    
-                        <div class="card-title heading-info">
-                            <h3 class="card-title subheading">Library Volunteer</h3>
-                            <h3 class="card-subtitle date">July 2015 - August 2015</h3>
-                            <h4>Windsor Public Library (Central), Windsor, ON</h4>
-                        </div>
-                        <ul role="card-text list">                        
-                            <li><strong>80 hours</strong> volunteering at the library in total.</li>
-                            <li>Wrote book reviews and was one of the hosts for a book club to <strong>recommend and encourge</strong> vistors to read.</li>
-                            <li><strong>Sorted out</strong> and placed them back on the library’s shelves.</li>
-                            <li><strong>Participated in and prepared</strong> children’s activities, including reading and games.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card border volunteer-position">    
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Event Volunteer</h3>
-                            <h3 class="card-subtitle date">August 2015</h3>
-                            <h4>Windsor Ribfest, Windsor, ON</h4>
-                        </div>
-                        <ul role="card-text list">                        
-                            <li><strong>45+ hours</strong> volunteering at the Ribfest.</li>
-                            <li>Helped <strong>set up</strong> the stage, tables, booths, and activites for the event.</li>
-                            <li><strong>Cleaned up</strong> garbage and tables for guests.</li>
-                            <li>Worked in a <strong>fast-paced team environment</strong> to make sure the event was executed successfully.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card border volunteer-position">    
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">Children’s Christmas Party Host</h3>
-                            <h3 class="card-subtitle date">December 2016</h3>
-                            <h4>Vincent Massey Secondary School, Windsor, ON</h4>
-                        </div>
-                        <ul role="card-text list">                        
-                            <li>Helped the school event <strong>run smoothly</strong> to allow unfortunate children to have a safe happy Christmas.</li>
-                            <li>Assigned to <strong>watch over</strong> a child to perform activites such as face painting, caroling, cookie baking, and gift opening.</li>
-                        </ul>
-                    </div>
-
-                    <div class="card border volunteer-position">    
-                        <div class="heading-info">
-                            <h3 class="card-title subheading">School Dance Security</h3>
-                            <h3 class="card-subtitle date">November 2017</h3>
-                            <h4>Vincent Massey Secondary School, Windsor, ON</h4>
-                        </div>
-                        <ul role="card-text list">                        
-                            <li>Was part of the <strong>security team</strong> for the 2017 Vincent Massey All Night Social school dance fundraiser.</li>
-                            <li><strong>Watched over</strong> doorways and <strong>prevented</strong> unauthorized guests from coming in to make sure the event was safe and executed successfully.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- EVENTS AND COMPETITIONS -->
-                <article id="events" role="article">
-                    <h2>Events and Competitions</h2>
-
-                    <!-- List of Events and Competitions -->
-                    <div class="list-group list-group-flush event-list">    
-                        <ul role="list">
-                            <li class="list-group-item">
-                                <a href="https://windsorstar.com/news/local-news/hackathon-brings-together-brightest-teen-technology-minds" target="_blank" title="MasseyHacks Article"><strong>MasseyHacks I</strong> | March 2016 | Vincent Massey Secondary School, Windsor, ON</a>
-                            </li>
-                            <li class="list-group-item"><strong>MasseyHacks II</strong> | May 2016 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li class="list-group-item"><strong>Canadian Computing Competition Contest</strong> | February 2016 and 2017 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li class="list-group-item"><strong>AMC 12B Math Contest</strong> | February 2018 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li class="list-group-item"><strong>Euclid Math Contest</strong> | April 2017 and 2018 | Vincent Massey Secondary School, Windsor, ON</li>
-                            <li class="list-group-item">
-                                <a href="http://www.uwindsor.ca/dailynews/2018-09-28/students-showcase-computing-skills-preliminary-competition" target="_blank" title="Commiuntech Article"><strong>Communitech Code/Design to Win Preliminaries</strong> | September 2018 | University of Windsor, Windsor, ON</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="pdf/Bystander.pdf" target="_blank" title="Certificate"><strong>Bystander Initiative Program</strong> | November 2018 | University of Windsor, Windsor, ON</a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="https://kitchener.ctvnews.ca/video?clipId=1779686" target="_blank" title="Hack the North Video"><strong>Hack the North 2019</strong> | September 2019 | University of Waterloo, Waterloo, ON</a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-           
-            </main>
-            
-            <!-- FOOTER -->
-            <footer role="contentinfo"> 
-                <p>Copyright &copy; <span class="copyright-year">2019</span> by Phillip Pham</p>
-            </footer>
+        <!-- Collapsable Navbar -->
+        <div class="collapse navbar-collapse" id="toggle-nav">
+          <div class="navbar-nav">
+            <a class="btn nav-item nav-link active" href="#about" title="About"
+              >About</a
+            >
+            <a
+              class="btn nav-item nav-link"
+              href="#skills-projects"
+              title="Skills and Projects"
+              >Skills and Projects</a
+            >
+            <a class="btn nav-item nav-link" href="#education" title="Education"
+              >Education</a
+            >
+            <a class="btn nav-item nav-link" href="#work" title="Experience"
+              >Experience</a
+            >
+            <a
+              class="btn nav-item nav-link"
+              href="#volunteer"
+              title="Volunteer Experience"
+              >Volunteer Experience</a
+            >
+            <a
+              class="btn nav-item nav-link"
+              href="#events"
+              title="Events and Competitions"
+              >Events and Competitions</a
+            >
+          </div>
         </div>
-        
-        <!-- jQuery, Popper.js, Bootstrap Libraries-->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </div>
+    </nav>
 
-        <!-- Website Scripts -->
-        <script src="scripts/script.js"></script>
-    </body>
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+      <!-- HEADER (ABOUT)-->
+      <header id="about" role="banner">
+        <!-- Profile -->
+        <div class="profile">
+          <div class="view overlay zoom">
+            <img
+              class="profile-img img-responsive img-fluid"
+              src="images/phillip.PNG"
+              alt="Profile Image"
+              role="img"
+            />
+          </div>
+          <h1 class="text-center">Phillip Pham</h1>
+          <h2 class="text-center">Computer Science Student</h2>
+          <p>
+            Hello! My name is Phillip and I am a computer science student
+            starting my third year at the University of Windsor. Some of my
+            favourite hobbies including cycling, fishing, and programming. I am
+            expected to graduate at the end of the year 2022. Please feel free
+            to look around at my website!
+          </p>
+          <!--<a class="btn btn-info btn-block btn-resume" href="pdf/Resume.pdf" target="_blank">Resume</a>-->
+        </div>
+
+        <!-- External Link Buttons-->
+        <div class="links">
+          <a
+            href="mailto:masterphillip17@gmail.com"
+            target="_blank"
+            title="Email"
+          >
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <span class="display-text">Email</span>
+          </a>
+          <a
+            href="https://github.com/infinitybl"
+            target="_blank"
+            title="GitHub"
+          >
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span class="display-text">GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/phillip-pham-6b48b7189/"
+            target="_blank"
+            title="Linkedin"
+          >
+            <span class="icon"><i class="fab fa-linkedin"></i></span>
+            <span class="display-text">Linkedin</span>
+          </a>
+          <a
+            href="https://devpost.com/infinitybl"
+            target="_blank"
+            title="Devpost"
+          >
+            <span class="icon"
+              ><img
+                class="devpost"
+                src="./images/devpost.webp"
+                height="60"
+                width="60"
+                alt="Devpost Icon"
+            /></span>
+            <span class="display-text">Devpost</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- MAIN PORTION -->
+      <main role="main">
+        <!-- SKILLS AND PROJECTS-->
+        <article id="skills-projects" role="article">
+          <h2>Skills and Projects</h2>
+
+          <!-- Skill and Project Details -->
+          <div class="card border skill">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Web Development</h3>
+              <h4>
+                <strong>Frontend:</strong> HTML 5, CSS, JavaScript, Bootstrap,
+                Sass, jQuery, React.js, Redux
+              </h4>
+              <br />
+              <h4>
+                <strong>Backend:</strong> Node.js, Express.js, PHP, OracleDB,
+                MySQL, MongoDB, XAMPP, AJAX
+              </h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Developed <strong>Recycle Cam</strong> in a group of four people
+                at <strong>Hack the North 2019</strong>, a web application made
+                using <strong>React.js</strong> that takes pictures of
+                recyclable objects and categorizes how to dispose them using
+                <strong>Microsoft Azure</strong> object recognition. I helped
+                create both the frontend and backend working with the
+                <strong>Earth 911 API</strong> and
+                <strong>Google Cloud</strong>
+                <a
+                  href="https://devpost.com/software/recycle-cam"
+                  target="_blank"
+                  title="Recycle Cam"
+                  ><i class="fa fa-external-link"></i
+                ></a>
+              </li>
+              <li>
+                Developed <strong>LaptopFindr</strong> in a group of five
+                people, a website used to find the best laptop deals given
+                constraints such as cost, brand, processor, etc. I worked on the
+                majority of the <strong>PHP</strong> backend, dealing with
+                login/logout, adding/removing the user's favourite laptops to
+                the
+                <strong>MySQL</strong>
+                database system, and using <strong>AJAX</strong> to populate the
+                page with the laptops dynamically using information obtained
+                from the noteb.com API
+                <a
+                  href="http://patel1ik.myweb.cs.uwindsor.ca/Final/public_html/index.php"
+                  target="_blank"
+                  title="LaptopFindr"
+                  ><i class="fa fa-external-link"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card border skill">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Mobile Development</h3>
+              <h4>
+                React Native, Flutter
+              </h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Developed
+                <strong>Active COVID-19 Clinical Trials Tracker</strong> in a
+                group of three people at <strong>HackDSC 2020</strong>, a
+                cross-platform mobile app that tracks all active clinical trials
+                related to the COVID-19 virus based on official information from
+                the Wolrd Health Organization. I developed and optimized the
+                Android version of the app using the
+                <strong>Flutter</strong> framework and
+                <strong>Google Maps API</strong>.
+                <a
+                  href="https://devpost.com/software/active-covid-19-clinical-trials-tracker"
+                  target="_blank"
+                  title="Active COVID-19 Clinical Trials Tracker"
+                  ><i class="fa fa-external-link"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card border skill">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Languages</h3>
+              <h4>
+                Python, Java, JavaScript, TypeScript, C, Dart, Bash, Powershell,
+                ActionScript
+              </h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Recreated one stage of the popular
+                <strong>Bloons Tower Defense 5</strong> game using
+                <strong>Java</strong> and <strong>Java Swing</strong> for the UI
+              </li>
+              <li>
+                Remade five unique levels of the
+                <strong>Arkanoid Advance GBA</strong> game using
+                <strong>Java</strong> and <strong>Java Swing</strong> for the UI
+                <a
+                  href="https://github.com/infinitybl/Arkanoid-GBA-Remake"
+                  target="_blank"
+                  title="Arkanoid"
+                  ><i class="fa fa-external-link"></i
+                ></a>
+              </li>
+              <li>
+                Recreated one stage of the popular
+                <strong>Plants vs Zombie</strong> game using
+                <strong>Python</strong> and <strong>Pygame</strong>
+              </li>
+              <li>
+                Developed an Overwatch themed
+                <strong>paint application</strong> with
+                <strong>Python</strong> and the <strong>Pygame</strong> graphics
+                library that supports drawing with brushes, lines, shapes,
+                filling, text, and stamps. Additional features include an
+                advanced colour gradient selector, filters, undo and redo, image
+                saving and loading, as well as support for multiple canvas
+                instances/tabs at once.
+                <a
+                  href="https://github.com/infinitybl/Python-Paint-Program"
+                  target="_blank"
+                  title="Paint Program"
+                  ><i class="fa fa-external-link"></i
+                ></a>
+              </li>
+              <li>
+                Developed a clone of the classic <strong>snake game</strong> for
+                Adobe Flash Player using <strong>ActionScript</strong>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- EDUCATION -->
+        <article id="education" role="article">
+          <h2>Education</h2>
+          <div class="card border institution">
+            <!-- University Details -->
+            <div class="heading-info">
+              <h3 class="card-title subheading">
+                B.C.S. in Computer Science (Honours) Co-op
+              </h3>
+              <h3 class="card-subtitle date">September 2018 - Present</h3>
+              <h4>University of Windsor (Windsor, ON)</h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li><strong>97.47%</strong> cumulative average</li>
+              <li><strong>98.00%</strong> major average</li>
+              <li>
+                Currently a <strong>third-year</strong> student starting Fall
+                2020
+              </li>
+              <li>
+                Obtained <strong>President</strong> and
+                <strong>Dean's</strong> Honour Roll each year
+              </li>
+              <li>
+                Recipient of the UWindsor <strong>Ron W. Ianni</strong>,
+                Canadian Italian Business & Professional Association, Eleanor
+                Catherine Wallace Memorial, and
+                <strong>Outstanding Scholars Candidate</strong> entrance
+                scholarships
+              </li>
+              <li>
+                Recipient of the
+                <strong>Guaranteed Removals</strong> scholarship
+              </li>
+            </ul>
+          </div>
+          <div class="card border institution">
+            <!-- High School Details -->
+            <div class="heading-info">
+              <h3 class="card-title subheading">
+                Ontario Secondary School Diploma
+              </h3>
+              <h3 class="card-subtitle date">September 2014 - June 2018</h3>
+              <h4>Vincent Massey Secondary School (Windsor, ON)</h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li><strong>95%</strong> cumulative GPA average</li>
+              <li>
+                Grade 9, 10, 11, and 12
+                <strong>Honour Roll with Distinction</strong> (90% average or
+                higher each year)
+              </li>
+              <li>
+                Ontario Scholar (80% average or greater in my top six best Grade
+                12 courses)
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- WORK EXPERIENCE -->
+        <article id="work" role="article">
+          <h2>Experience</h2>
+
+          <!-- Job Details -->
+
+          <div class="card border job">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Co-op Web Developer</h3>
+              <h3 class="card-subtitle date">June 2020 - Present</h3>
+              <h4>Pernod Ricard (Windsor, ON)</h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Developed API backend services for warehouse management web
+                applications using <strong>Node.js</strong>,
+                <strong>Express.js</strong>, <strong>TypeScript</strong>, and
+                <strong>SQL</strong> with <strong>OracleDB</strong>
+              </li>
+              <li>
+                Documented the code base using <strong>TSDoc</strong> and
+                created API documentation with
+                <strong>Swagger</strong> following the
+                <strong>OpenAPI 3.0</strong> specification
+              </li>
+              <li>
+                Utilized <strong>Git</strong>, <strong>Bitbucket</strong>, and
+                <strong>Sourcetree</strong> for version control and
+                <strong>JIRA</strong> for issue tracking
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border job">
+            <div class="heading-info">
+              <h3 class="card-title subheading">
+                MCSI Remote Internship Program
+              </h3>
+              <h3 class="card-subtitle date">May 2020 - Present</h3>
+              <h4>Mossé Cyber Security Institute (Remote)</h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Write custom offensive security tools such as
+                <strong>keyloggers</strong> and <strong>malware</strong> to aid
+                Red Teaming operators
+              </li>
+              <li>
+                Assessed the security settings of Windows machines and harden
+                them with <strong>Powershell</strong> scripts
+              </li>
+              <li>
+                Scanned for threat actors on Windows networks using
+                <strong>Python</strong>
+              </li>
+              <li>
+                Hunted for malware using <strong>YARA</strong> in a
+                <strong>Kali Linux</strong>
+                virtual machine
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border job">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Teaching Assistant</h3>
+              <h3 class="card-subtitle date">September 2019 - Present</h3>
+              <h4>University of Windsor (Windsor, ON)</h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Assisted in managing the
+                <strong
+                  >Key Concepts in Computer Science and Intro to Algorithms and
+                  Programming II</strong
+                >
+                first-year classes
+              </li>
+              <li>
+                Held practical lab sessions and tutored students on concepts
+                such as <strong>Big-O notation</strong>,
+                <strong>recursion</strong>, <strong>file I/O</strong>, and
+                <strong>pointers</strong> in office hours
+              </li>
+              <li>
+                <strong>Graded</strong> assignments and midterms in short
+                periods of time.
+              </li>
+              <li>
+                <strong>Proctored</strong> examinations and aided the professor
+                in organizing them.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border job">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Computer Technician</h3>
+              <h3 class="card-subtitle date">July 2019 - March 2020</h3>
+              <h4>Silicon Direct (Windsor, ON)</h4>
+            </div>
+            <ul class="card-text" role="list">
+              <li>
+                Repaired computers and laptops through
+                <strong>disassembling</strong> and
+                <strong>replacing</strong> various components
+              </li>
+              <li>
+                <strong>Cleaned and sped up</strong> computers by removing
+                viruses, updating drivers, and fixing software problems
+              </li>
+              <li>
+                Worked in the <strong>data recovery lab</strong>, recovering
+                files off damaged hard drives and flash drives using the
+                <strong>PC-3000</strong>
+                software and equipment to extract the information
+              </li>
+              <li>
+                Documented <strong>invoices and customer sales</strong> in the
+                computer system and updated the business website with new items
+              </li>
+              <li>
+                Effectively advertised on <strong>Google Adwords</strong> and
+                created promotional materials using programs such as
+                <strong>Adobe Photoshop</strong>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- VOLUNTEER EXPERIENCE -->
+        <article id="volunteer" role="article">
+          <h2>Volunteer Experience</h2>
+
+          <!-- Volunteer Position Details-->
+
+          <div class="card border volunteer-position">
+            <div class="heading-info">
+              <h3 class="card-title subheading">School Dance Security</h3>
+              <h3 class="card-subtitle date">November 2017</h3>
+              <h4>Vincent Massey Secondary School (Windsor, ON)</h4>
+            </div>
+            <ul role="card-text list">
+              <li>
+                Was part of the <strong>security team</strong> for the 2017
+                Vincent Massey All Night Social school dance fundraiser
+              </li>
+              <li>
+                <strong>Prevented</strong> unauthorized guests from coming in to
+                make sure the event was safe
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border volunteer-position">
+            <div class="heading-info">
+              <h3 class="card-title subheading">
+                Children’s Christmas Party Host
+              </h3>
+              <h3 class="card-subtitle date">December 2016</h3>
+              <h4>Vincent Massey Secondary School (Windsor, ON)</h4>
+            </div>
+            <ul role="card-text list">
+              <li>
+                Helped the school event <strong>run smoothly</strong> to allow
+                unfortunate children to have a safe happy Christmas
+              </li>
+              <li>
+                Assigned to <strong>watch over</strong> a child to perform
+                activites such as face painting, caroling, cookie baking, and
+                gift opening
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border volunteer-position">
+            <div class="heading-info">
+              <h3 class="card-title subheading">Event Volunteer</h3>
+              <h3 class="card-subtitle date">August 2015</h3>
+              <h4>Windsor Ribfest (Windsor, ON)</h4>
+            </div>
+            <ul role="card-text list">
+              <li><strong>45+ hours</strong> volunteering at the Ribfest.</li>
+              <li>
+                Helped set up the stage, tables, booths, and activites for the
+                event
+              </li>
+              <li><strong>Cleaned up</strong> garbage and tables for guests</li>
+              <li>
+                Worked in a <strong>fast-paced team environment</strong> to make
+                sure the event was executed successfully
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border volunteer-position">
+            <div class="card-title heading-info">
+              <h3 class="card-title subheading">Library Volunteer</h3>
+              <h3 class="card-subtitle date">July 2015 - August 2015</h3>
+              <h4>Windsor Public Library (Windsor, ON)</h4>
+            </div>
+            <ul role="card-text list">
+              <li>
+                <strong>80 hours</strong> volunteering at the library in total
+              </li>
+              <li>
+                Wrote book reviews and was one of the hosts for a book club to
+                <strong>recommend and encourge</strong> vistors to read
+              </li>
+              <li>
+                <strong>Sorted out</strong> books and placed them back on the
+                library’s shelves
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- EVENTS AND COMPETITIONS -->
+        <article id="events" role="article">
+          <h2>Events and Competitions</h2>
+
+          <!-- List of Events and Competitions -->
+          <div class="list-group list-group-flush event-list">
+            <ul role="list">
+              <li class="list-group-item">
+                <strong>Oxford Digithon 2020</strong> | May 2020 | Online
+              </li>
+              <li class="list-group-item">
+                <strong>HackDSC 2020</strong> | April 2020 | Online
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="https://kitchener.ctvnews.ca/video?clipId=1779686"
+                  target="_blank"
+                  title="Hack the North Video"
+                  ><strong>Hack the North 2019</strong> | September 2019 |
+                  University of Waterloo (Waterloo, ON)</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="pdf/Bystander.pdf" target="_blank" title="Certificate"
+                  ><strong>Bystander Initiative Program</strong> | November 2018
+                  | University of Windsor (Windsor, ON)</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="http://www.uwindsor.ca/dailynews/2018-09-28/students-showcase-computing-skills-preliminary-competition"
+                  target="_blank"
+                  title="Communitech Article"
+                  ><strong>Communitech Code/Design to Win Preliminaries</strong>
+                  | September 2018 | University of Windsor (Windsor, ON)</a
+                >
+              </li>
+              <li class="list-group-item">
+                <strong>Euclid Math Contest</strong> | April 2017 and 2018 |
+                Vincent Massey Secondary School (Windsor, ON)
+              </li>
+              <li class="list-group-item">
+                <strong>AMC 12B Math Contest</strong> | February 2018 | Vincent
+                Massey Secondary School (Windsor, ON)
+              </li>
+              <li class="list-group-item">
+                <strong>Canadian Computing Competition Contest</strong> |
+                February 2016 and 2017 | Vincent Massey Secondary School,
+                Windsor, ON
+              </li>
+              <li class="list-group-item">
+                <strong>MasseyHacks II</strong> | May 2016 | Vincent Massey
+                Secondary School (Windsor, ON)
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="https://windsorstar.com/news/local-news/hackathon-brings-together-brightest-teen-technology-minds"
+                  target="_blank"
+                  title="MasseyHacks Article"
+                  ><strong>MasseyHacks I</strong> | March 2016 | Vincent Massey
+                  Secondary School (Windsor, ON)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+      </main>
+
+      <!-- FOOTER -->
+      <footer role="contentinfo">
+        <p>
+          Copyright &copy; <span class="copyright-year">2020</span> by Phillip
+          Pham
+        </p>
+      </footer>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap Libraries-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Website Scripts -->
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

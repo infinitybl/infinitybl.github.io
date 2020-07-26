@@ -8,219 +8,238 @@
 
 /* Apply Border-Box fix */
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    white-space: wrap;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  white-space: wrap;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* Remove white area around main containers */
 .container-fluid {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* Block Styles */
 /* ------------------------------------- */
 body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
 }
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
 }
 h1 {
-    font-size: 5rem;
-    padding: 0.2em;
+  font-size: 5rem;
+  padding: 0.2em;
 }
 h2 {
-    font-size: 2.8rem;
-    color: floralwhite;
-    padding-bottom: 0.3em;
+  font-size: 2.8rem;
+  color: floralwhite;
+  padding-bottom: 0.3em;
 }
 h3 {
-    color: #011C27;
-    margin: 0.1em auto;
+  color: #011c27;
+  margin: 0.1em auto;
 }
 h4 {
-    color: #545677;
-    margin: 0.1em auto;
-    font-size: 1.4rem;
+  color: #545677;
+  margin: 0.1em auto;
+  font-size: 1.4rem;
 }
 header {
-    background-image: url(../images/dark.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 1em;
+  background-image: url(../images/dark.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 1em;
 }
 article {
-    background-color: #56a3a6;
-    margin: 0 auto;
-    padding: 2.25em 1em;
-    padding-top: 4em;
+  background-color: #56a3a6;
+  margin: 0 auto;
+  padding: 2.25em 1em;
+  padding-top: 4em;
 }
 footer {
-    background-color: #484538;
-    text-align: center;
-    color: white;
-    padding: 1em;
+  background-color: #484538;
+  text-align: center;
+  color: white;
+  padding: 1em;
 }
 ul {
-    list-style: square;
+  list-style: square;
 }
 
 /* Inline Styles */
 /* ------------------------------------- */
 em {
-    font-weight: 700;
-    font-size: 1em;
+  font-weight: 700;
+  font-size: 1em;
 }
 strong {
-    font-weight: 700;
-    font-size: 1em;
+  font-weight: 700;
+  font-size: 1em;
 }
 ul strong {
-    font-size: 1.2em;
-    font-weight: 900;
+  font-size: 1.2em;
+  font-weight: 900;
 }
-
 
 /* Profile */
 /* ------------------------------------- */
 .profile {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 .profile-img {
-    border: 5px solid white;
-    border-radius: 10%;
-    margin-top: 5em;
+  border: 5px solid white;
+  border-radius: 10%;
+  margin-top: 5em;
 }
 .btn-resume {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
-
 
 /* Main Page Sections */
 /* ------------------------------------- */
 /* Alternating colouring style for the page sections and cards */
 article:nth-child(odd) {
-    background-color: #d4eac8;
+  background-color: #d4eac8;
 }
 article:nth-child(even) {
-    background-color: #56a3a6;
+  background-color: #56a3a6;
 }
 article:nth-child(odd) h2 {
-    color: #484538;
+  color: #484538;
 }
 article:nth-child(even) h2 {
-    color: white;
+  color: white;
 }
 .card {
-    padding: 1em;
-    margin-bottom: 0.5em;
+  padding: 1em;
+  margin-bottom: 0.5em;
 }
-/* Add a border after every information element except for the last element in each of the main articles. */ 
+/* Add a border after every information element except for the last element in each of the main articles. */
 /* .skill:nth-last-child(n + 2), .institution:nth-last-child(n + 2), .job:nth-last-child(n + 2),
 .volunteer-position:nth-last-child(n + 2) {
     border-bottom: 1px solid black;
 } */
 
-
 /* Navigation */
 /* ------------------------------------- */
 nav {
-    background-color: #cad49d;
+  background-color: #cad49d;
 }
 nav a {
-    text-decoration: none;
-    border: 1px solid white;
+  text-decoration: none;
+  border: 1px solid white;
 }
-nav a:focus, nav a:hover {
-    background-color: #c0d8e0; 
+nav a:focus,
+nav a:hover {
+  background-color: #c0d8e0;
 }
 nav a.active {
-    background-color: #484538;
-    animation: rubberBand 1s; /* Animate active nav link */
+  background-color: #615a3d;
+  animation: rubberBand 1s; /* Animate active nav link */
 }
 
 .subheading {
-    font-weight: bolder;
-    font-size: 2em;   
+  font-weight: bolder;
+  font-size: 2em;
 }
 .date {
-    color: #03254E;
-    margin: 0.1em auto;
-    font-size: 1.8em;
+  color: #03254e;
+  margin: 0.1em auto;
+  font-size: 1.8em;
 }
 
 /* External Link Buttons */
 /* ------------------------------------- */
 .links {
-    text-align: center;
+  text-align: center;
 
-    /* Keep all the buttons on one row */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  /* Keep all the buttons on one row */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .links a {
-    text-decoration: none;
-    margin: 0;
+  text-decoration: none;
+  margin: 0;
 
-    /* Keep all flex elements the same size */
-    flex-basis: 0; 
-    flex-grow: 1;
+  /* Keep all flex elements the same size */
+  flex-basis: 0;
+  flex-grow: 1;
 
-    font-size: 3rem;
-    border: 2px solid black;
+  font-size: 3rem;
+  border: 2px solid black;
 
-    /* Use a gradient for sliding button animation */
-    background: linear-gradient(to right, black 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
+  /* Use a gradient for sliding button animation */
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
 
-    transition: all .3s ease-out;
-    color: white;
-} 
+  transition: all 0.3s ease-out;
+  color: white;
+}
 /* Apply sliding animation when user hovers over button */
 .links a:hover {
-    background-position: left bottom;
-}  
-/* Don't display the text span in buttons until user hovers over it */ 
-.links a .display-text { 
-    display: none; 
+  background-position: left bottom;
+}
+/* Don't display the text span in buttons until user hovers over it */
+.links a .display-text {
+  display: none;
 }
 /* Change the icon colours */
 .fa-envelope {
-    color: rgb(230, 40, 40);
+  color: rgb(230, 40, 40);
 }
 .fa-github {
-    color: rgb(159, 36, 175);
+  color: rgb(159, 36, 175);
 }
 .fa-linkedin {
-    color: rgb(54, 114, 226);
+  color: rgb(54, 114, 226);
 }
 .fa-facebook {
-    color: rgb(27, 80, 179);
+  color: rgb(27, 80, 179);
+}
+.devpost {
+  position: relative; /* Declared position allows for location changes */
+  top: -3px; /* Moves the image 2px closer to the top of the page */
 }
 
 /* Event List */
 /* ------------------------------------- */
 .event-list ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Animations */
 /* ------------------------------------- */
 .rubberBand {
-    animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+/* Bottom border after each list element */
+/* ------------------------------------- */
+li:not(:last-child, .list-group-item) {
+  border-bottom: 1px solid black;
+}
+
+/* Bottom links hover */
+/* ------------------------------------- */
+.card:hover {
+  background-color: rgba(254, 255, 181, 0.973);
+}
+.list-group-item:hover {
+  background-color: rgba(254, 255, 181, 0.973);
 }
 
 /* Media Queries (Start from mobile up to desktop) */
@@ -228,102 +247,106 @@ nav a.active {
 /* Add padding and margins on elements to make website look good on every device. */
 
 /* Smallest phone screen  */
-@media (min-width: 340px) { 
-    article {
-        padding: 4em 1em;
-    }
-    nav a {
-        padding: 0.25em;
-    }
-    .profile-img {
-        margin-top: 5em;
-    }
-
+@media (min-width: 340px) {
+  article {
+    padding: 4em 1em;
+  }
+  nav a {
+    padding: 0.25em;
+  }
+  .profile-img {
+    margin-top: 5em;
+  }
 }
 
 @media (min-width: 574px) {
-    article {
-        padding: 3.5em 1em;
-    }
-    footer {
-        padding: 1em;
-    }
-    nav a {
-        padding: 0.5em;
-    }
-    .profile-img {
-        margin-top: 5em;
-    }
+  article {
+    padding: 3.5em 1em;
+  }
+  footer {
+    padding: 1em;
+  }
+  nav a {
+    padding: 0.5em;
+  }
+  .profile-img {
+    margin-top: 5em;
+  }
 }
 
 @media (min-width: 654px) {
-    nav a {
-        padding: 0.4em;
-    }
-    .profile-img {
-        margin-top: 5em;
-    }
+  nav a {
+    padding: 0.4em;
+  }
+  .profile-img {
+    margin-top: 5em;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    header {
-        padding: 3em;
-    }
-    article {
-        padding: 4em;
-    }
-    nav a {
-        padding: 1em;
-    }
-    .links a {
-        padding: 0.75em;
-    }
+@media (min-width: 768px) {
+  header {
+    padding: 3em;
+  }
+  article {
+    padding: 4em;
+  }
+  nav a {
+    padding: 1em;
+  }
+  .links a {
+    padding: 0.75em;
+  }
 
-    /* Display the articles' information in two columns */
-    .skill, .institution, .job, .volunteer-position {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-flow: dense;
-        margin: 1em;
-    }
-    .heading-info {
-        grid-column: 1 / span 1;
-    }
-    .skill ul, .institution ul, .job ul .volunteer-position ul {
-        grid-column: 2 / span 1;
-    }
-    
-    /* Change text of external link buttons on hover */
-    .links a:hover .icon { 
-        display: none; 
-    }
-    .links a:hover .display-text {
-        font-size: 1.5rem;
-        display: inline;
-    } 
+  /* Display the articles' information in two columns */
+  .skill,
+  .institution,
+  .job,
+  .volunteer-position {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    margin: 1em;
+  }
+  .heading-info {
+    grid-column: 1 / span 1;
+  }
+  .skill ul,
+  .institution ul,
+  .job ul .volunteer-position ul {
+    grid-column: 2 / span 1;
+  }
+
+  /* Change text of external link buttons on hover */
+  .links a:hover .icon {
+    display: none;
+  }
+  .links a:hover .display-text {
+    font-size: 1.5rem;
+    display: inline;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    nav a {
-        padding: 1.25em;
-    }
-    .links a {
-        padding: 0.75em;
-    }
+  nav a {
+    padding: 1.25em;
+  }
+  .links a {
+    padding: 0.75em;
+  }
 
-    .links a:hover .display-text {
-        font-size: 2rem;
-    }
+  .links a:hover .display-text {
+    font-size: 2rem;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    nav a {
-        padding: 1.25em;
-    }
-    .links a {
-        padding: 0.75em;
-    }
+  nav a {
+    padding: 1.25em;
+  }
+  .links a {
+    padding: 0.75em;
+  }
 }

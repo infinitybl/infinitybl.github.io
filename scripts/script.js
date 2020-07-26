@@ -7,26 +7,32 @@ document.querySelector(".copyright-year").textContent = date.getFullYear();
     Output: Nothing.
 */
 function animateElement(element, animation) {
-    /* Add animated and the respective animation classes with web browser support, 
+  /* Add animated and the respective animation classes with web browser support, 
        and remove it once done so it can repeat the animation next time */
-    $(element).addClass("animated " + animation).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
+  $(element)
+    .addClass("animated " + animation)
+    .one(
+      "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+      function () {
         $(element).removeClass("animated " + animation);
-    });
+      }
+    );
 }
 
 /* Animate the About page section headings once webpage loads */
-$(document).ready(function() {
-    animateElement("#about h1, #about h2", "rubberBand");
+$(document).ready(function () {
+  animateElement("#about h1, #about h2", "rubberBand");
 });
 
+$(".nav-link").on("click", function () {
+  $(".navbar-collapse").collapse(
+    "hide"
+  ); /* Hide navigation bar right away after click */
 
-$(".nav-link").on("click", function() {
-    $(".navbar-collapse").collapse("hide"); /* Hide navigation bar right away after click */
-
-    /* Animate headings every time a navigation link is clicked */
-    /* Target only the h1 and h2 headings of the respective page section (determined from what
+  /* Animate headings every time a navigation link is clicked */
+  /* Target only the h1 and h2 headings of the respective page section (determined from what
        navigation link the user pressed) to animate */
-    var headingsSelector = $(this).attr("href") + " h1 , " + $(this).attr("href") + " h2";
-    animateElement(headingsSelector, "rubberBand");
+  var headingsSelector =
+    $(this).attr("href") + " h1 , " + $(this).attr("href") + " h2";
+  animateElement(headingsSelector, "rubberBand");
 });
-
